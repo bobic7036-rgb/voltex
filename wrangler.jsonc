@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "voltex-case",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-31",
+  "assets": { "directory": "./dist", "binding": "ASSETS", "not_found_handling": "single-page-application" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "voltex-db", "database_id": "PASTE_D1_DATABASE_ID_HERE", "migrations_dir": "migrations" }
+  ],
+  "vars": { "APP_NAME": "VOLTEX CASE" }
+}
